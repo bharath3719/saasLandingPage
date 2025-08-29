@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "public-files",
@@ -639,7 +639,7 @@
         }
       ],
       "indirect": false,
-      "globalContextsFilePath": "",
+      "globalContextsFilePath": "plasmic/light_saa_s_landing_page/PlasmicGlobalContextsProvider.tsx",
       "splitsProviderFilePath": "",
       "styleTokensProviderFilePath": "plasmic/light_saa_s_landing_page/PlasmicStyleTokensProvider.tsx",
       "projectModuleFilePath": "plasmic/light_saa_s_landing_page/plasmic.tsx",
@@ -655,6 +655,90 @@
           "name": "Fetcher",
           "displayName": "plasmic-data-source-fetcher",
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        },
+        {
+          "id": "uQ0iXZD_49E9",
+          "name": "RechartBar",
+          "displayName": "RechartBar",
+          "componentImportPath": "./components/RechartBar"
+        },
+        {
+          "id": "Y8tCaKgOrgOk",
+          "name": "Button",
+          "displayName": "WDPButton",
+          "componentImportPath": "@WESCO-International/wdp-ui-components/components/button"
+        },
+        {
+          "id": "UQMMT-NHUI8k",
+          "name": "WDPDropdown",
+          "displayName": "WDPDropdown",
+          "componentImportPath": "./components/WDPDropdown"
+        },
+        {
+          "id": "8vTfuBhY7I5O",
+          "name": "WDPSideNav",
+          "displayName": "WDPSideNav",
+          "componentImportPath": "./components/WDPSidenav"
+        },
+        {
+          "id": "3CgaboCX7ouX",
+          "name": "WDPTablePagination",
+          "displayName": "WDPTablePagination",
+          "componentImportPath": "./components/PaginationServer"
+        },
+        {
+          "id": "Uv_Y12fTy3Rp",
+          "name": "AppLayout",
+          "displayName": "WDPApplayout",
+          "componentImportPath": "./components/AppLayout"
+        },
+        {
+          "id": "-xvxKCjOfdli",
+          "name": "WDPNavbar",
+          "displayName": "WDPNavbar",
+          "componentImportPath": "./components/WDPNavbar"
+        },
+        {
+          "id": "nMUsExPblNXm",
+          "name": "Relinechart",
+          "displayName": "RelineChart",
+          "componentImportPath": "./components/RechartLine"
+        },
+        {
+          "id": "C1NbFDVEH8XL",
+          "name": "PieChart",
+          "displayName": "PieChart",
+          "componentImportPath": "./components/Repiechart"
+        },
+        {
+          "id": "ZBE7uM8LZduR",
+          "name": "ReAreaChart",
+          "displayName": "AreaChartPlasmic",
+          "componentImportPath": "./components/Reareachart"
+        },
+        {
+          "id": "9RT8GwtL8RTp",
+          "name": "Reradarchart",
+          "displayName": "RadarChart",
+          "componentImportPath": "./components/Reradarchat"
+        },
+        {
+          "id": "2X3TH0RD5f_W",
+          "name": "WDPDatepicker",
+          "displayName": "WDPDatepicker",
+          "componentImportPath": "./components/WDPDatepicker"
+        },
+        {
+          "id": "wF3HEoNjtAIl",
+          "name": "WDPCustomCard",
+          "displayName": "WDPCustomCard",
+          "componentImportPath": "./components/WDPCustomCard"
+        },
+        {
+          "id": "jiyl2fxkXbWu",
+          "name": "UserContext",
+          "displayName": "UserContext",
+          "componentImportPath": "./context/UserContext"
         }
       ],
       "customFunctions": []

@@ -65,6 +65,7 @@ import Section from "../../Section"; // plasmic-import: f3xTBu9OXBfI/component
 import Teams from "../../Teams"; // plasmic-import: xykPv9jj4pl1/component
 import TextInput from "../../TextInput"; // plasmic-import: Fis_QJg04R--/component
 import FooterSection from "../../FooterSection"; // plasmic-import: CeyhfwEGeRg3/component
+import { ReAreaChart } from "../../Reareachart"; // plasmic-import: ZBE7uM8LZduR/codeComponent
 import { _useGlobalVariants } from "./plasmic"; // plasmic-import: dgD6tD4Ewxhqspb6sCy7BF/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: dgD6tD4Ewxhqspb6sCy7BF/styleTokensProvider
 
@@ -98,6 +99,7 @@ export type PlasmicHomepage__OverridesType = {
   link?: Flex__<"a"> & Partial<LinkProps>;
   textInput?: Flex__<typeof TextInput>;
   footerSection?: Flex__<typeof FooterSection>;
+  areaChart?: Flex__<typeof ReAreaChart>;
 };
 
 export interface DefaultHomepageProps {}
@@ -2814,6 +2816,18 @@ function PlasmicHomepage__RenderFunc(props: {
             data-plasmic-override={overrides.footerSection}
             className={classNames("__wab_instance", sty.footerSection)}
           />
+
+          <ReAreaChart
+            data-plasmic-name={"areaChart"}
+            data-plasmic-override={overrides.areaChart}
+            className={classNames("__wab_instance", sty.areaChart)}
+            data={[
+              { label: "Jan", value: 1200 },
+              { label: "Feb", value: 980 },
+              { label: "Mar", value: 1100 },
+              { label: "Apr", value: 1300 }
+            ]}
+          />
         </div>
       </div>
     </React.Fragment>
@@ -2828,14 +2842,16 @@ const PlasmicDescendants = {
     "svg",
     "link",
     "textInput",
-    "footerSection"
+    "footerSection",
+    "areaChart"
   ],
   headerHeroSection: ["headerHeroSection", "navbar", "svg"],
   navbar: ["navbar"],
   svg: ["svg"],
   link: ["link"],
   textInput: ["textInput"],
-  footerSection: ["footerSection"]
+  footerSection: ["footerSection"],
+  areaChart: ["areaChart"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -2848,6 +2864,7 @@ type NodeDefaultElementType = {
   link: "a";
   textInput: typeof TextInput;
   footerSection: typeof FooterSection;
+  areaChart: typeof ReAreaChart;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -2916,6 +2933,7 @@ export const PlasmicHomepage = Object.assign(
     link: makeNodeComponent("link"),
     textInput: makeNodeComponent("textInput"),
     footerSection: makeNodeComponent("footerSection"),
+    areaChart: makeNodeComponent("areaChart"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
